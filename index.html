@@ -1,0 +1,146 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ 	<style type="text/css">
+ 		.bochka{
+ 			width: 900px;
+ 			height: 800px;
+ 			margin-left: auto;
+ 			margin-right: auto;
+ 		}
+ 		.bg-danger{
+ 			background-color: red;
+ 		}
+ 		.bg-info{
+ 			background-color: blue;
+ 		}
+ 		.bg-success{
+ 			background-color: #eb9c15;
+ 		}
+ 		.bg-darksuccess{
+ 		 	background-image: url(stars.gif);
+ 		}
+ 		.he-1{
+ 			height: 100px;
+ 		}
+ 		.he-2{
+ 			height: 600px;
+ 		}
+ 		.he-3{
+ 			height: 500px;
+ 		}
+ 		.mt-1{
+ 			margin-top: 16px;
+ 		}
+ 		.col-10{
+ 			width: 80%;
+ 		}
+ 		.col-2{
+ 			width: 20%;
+ 		}
+ 		.col-3{
+ 			width: 30%;
+ 		}
+ 		.col-9{
+ 			width: 70%;
+ 		}
+ 		.col-12{
+ 			width: 100%;
+ 		}
+ 		.d-flex{
+ 			display: flex;
+ 		}
+ 		.ml-1{
+ 			margin-left: 10px;
+ 		}
+ 		.ml-3{
+ 			margin-left: 30px;
+ 		}
+ 		.center{
+ 			text-align: center;;
+ 		}
+ 		.btn{
+ 			padding-top: 10px;
+ 			padding-bottom: 10px;
+ 			padding-right: 30px;
+ 			padding-left: 30px; 
+ 		}
+ 		.window{
+ 			height: 500px;
+ 			width: 500px;
+ 			background-image: url(mamam.jpg);
+ 			position: absolute;
+ 			
+ 		}
+ 	</style>
+ </head>
+ <body class="bg-darksuccess">
+ 	<div class="bochka ">
+ 		<div class="he-1 d-flex">
+ 			<div class="window">
+ 		
+ 			</div>
+ 			<div class="bg-success he-1 col-10">
+ 				<h1>Малефисента: Владычица тьмы</h1>
+ 				<p>Хорошая задумка, но ужасная операторская работа</p>
+ 			</div>
+ 			<div class="bg-success he-1 col-2 ml-1 center">
+ 				<img src="star.png" class="col-3">
+ 				<h1 >3/10</h1>
+ 			</div>
+ 		</div>
+ 		<div class="he-2  mt-1 d-flex">
+ 			<div class="he-3 bg-success col-3">
+ 				<img src="mamam.jpg" class="col-12">
+ 				<button class="btn button1">Добавить</button>
+ 				
+ 			</div>
+ 			<div class="he-3 bg-success col-9 ml-1 ">
+ 				<iframe width="560" height="315" src="https://www.youtube.com/embed/TEEbZRaMmVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<div class="bochka mt-1">
+ 		<div class="he-1 d-flex">
+ 			<div class="bg-success he-1 col-10">
+ 				<h1>Oбещанный неверленд 2 сезон</h1>
+ 				<p>Обещанный Неверленд премьера второго сезона в январе 2021 года!</p>
+ 			</div>
+ 			<div class="bg-success he-1 col-2 ml-1 center">
+ 				<img src="like.png" class="starship col-3">
+ 				<h2 class="text1">106543 <p>like it</p></h1>
+ 			</div>
+ 		</div>
+ 		<div class="he-2  mt-1 d-flex">
+ 			<div class="he-3 bg-success col-3">
+ 				<img src="pn.webp" class="col-12">
+ 				<button class="btn button1">Добавить</button>
+ 				
+ 			</div>
+ 			<div class="he-3 bg-success col-9 ml-1 ">
+ 				<iframe width="560" height="315" src="https://www.youtube.com/embed/qO0z2_r6w_8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	
+ 	<script type="text/javascript">
+ 		button1 = document.querySelector(".button1");
+ 		let star = document.querySelector(".starship");
+ 		let count = 106543;
+ 		let text1 = document.querySelector(".text1");
+
+ 		button1.onclick = function() {
+ 			alert("Вы добавили в черный список список")
+
+ 		}
+ 		star.onclick = function(){
+ 			count = count + 1;
+ 			text1.innerHTML = count;
+
+
+ 		}
+ 		
+ 	</script>
+ </body>
+ </html>
